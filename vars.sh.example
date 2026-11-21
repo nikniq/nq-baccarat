@@ -1,0 +1,18 @@
+#!/bin/bash
+# Copy this to vars.sh and fill in your values.
+# vars.sh is gitignored — it holds host and account details.
+
+PROJECT="nq-baccarat"
+REMOTE="user@your-server.com"
+REMOTE_HOST="your-server.com"
+REMOTE_APP="www/$PROJECT"
+APP_URL="https://your-domain.com"
+APP_SSH="ssh"
+APP_SCP="scp"
+LOG_OUTPUT="./log/remote.out"
+
+# If you have multiple sites, list them here for the banner.
+SITES=()
+
+# Local defaults directory for option 99
+LOCAL_SCRIPTS_DEFAULT="$HOME/.ssh/remote/default"
