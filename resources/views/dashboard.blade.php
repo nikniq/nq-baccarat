@@ -28,6 +28,7 @@
         margin: 0 auto 1rem;
     }
     .avatar img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+    .dashboard-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 </style>
 @endpush
 
@@ -42,8 +43,11 @@
             @endif
         </div>
         <h1>Welcome, {{ auth()->user()->name }}!</h1>
-        <p>Your baccarat table is being prepared. The game will be available soon.</p>
-        <a href="/" class="btn btn-primary btn-lg">Back to Home</a>
+        <p>Ready for some baccarat? Take a seat at the table.</p>
+        <div class="dashboard-actions">
+            <a href="{{ route('game') }}" class="btn btn-primary btn-lg">Play Now</a>
+            <a href="/" class="btn btn-outline btn-lg">Home</a>
+        </div>
     </div>
 </div>
 @endsection

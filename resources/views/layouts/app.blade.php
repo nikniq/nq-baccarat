@@ -177,6 +177,7 @@
                 <li><a href="/#how-it-works">How It Works</a></li>
                 <li><a href="/#faq">FAQ</a></li>
                 @auth
+                    <li><a href="{{ route('game') }}">Play</a></li>
                     <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
                     <li>
                         <form method="POST" action="{{ route('logout') }}" style="display:inline">
